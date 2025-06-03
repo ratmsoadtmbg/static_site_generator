@@ -25,7 +25,7 @@ class TestTextNode(unittest.TestCase):
 
     def test_wrong_type(self):
         try:
-            node = TextNode("text node", TextType.BLOOD)
+            node = TextNode("text node", TextType.BLOD)
         except Exception as e:
             print(f"Error encountered: {e}")
 
