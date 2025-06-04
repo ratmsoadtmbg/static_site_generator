@@ -24,10 +24,9 @@ class TestTextNode(unittest.TestCase):
         self.assertEqual(node, node2)
 
     def test_wrong_type(self):
-        try:
+        with self.assertRaises(Exception):
             node = TextNode("text node", TextType.BLOD)
-        except Exception as e:
-            print(f"Error encountered: {e}")
+        
 
 
 if __name__ == "__main__":
